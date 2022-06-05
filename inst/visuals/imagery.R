@@ -3,7 +3,7 @@ library(ggmap)
 library(ggspatial)
 library(sf)
 
-register_google(key  = "AIzaSyBQ9Z1e_C4_j5BlVTOVEGFYSOCpKavFz4w")
+register_google(key  = readLines(".secret/googlekey"))
 panama <- get_googlemap(
   center  = c(-79.550107, 8.949327),
   style    = "feature:poi|element:labels|visibility:off",

@@ -6,9 +6,9 @@ the class project in DA3450: Open Source Data Analysis.
 
 ## To Do
 
--   \[\] Complete code cleaning
--   \[\] Package routines into R functions
--   \[\] Shiny app for predictive model
+-   Complete code cleaning
+-   Package routines into R functions
+-   Shiny app for predictive model
 
 ## Environment
 
