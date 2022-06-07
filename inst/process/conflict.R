@@ -20,6 +20,13 @@ ucdp <- fread(file)[, c("x", "y") := .(round(longitude, 2),
   st_transform(3857) |>
   st_intersection(grid$geometry)
 
+# ucdp <- fread(file)
+# ggplot() +
+#   geom_bar(data = ucdp[country %chin% c("Guatemala", "El Salvador", "Nicaragua",
+#                                         "Costa Rica", "Panama", "Honduras"), .N, by = country], 
+#            aes(x = reorder(country, N), y = N), stat = "identity") +
+#   coord_flip()
+
 ca_ucdp <- setDT(ucdp)[, temp_id := 1:NROW(ucdp)
                  ][, c("x", "y") := .(unlist(geometry)[[1]],
                                       unlist(geometry)[[2]]),
