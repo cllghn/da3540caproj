@@ -1,8 +1,7 @@
 
-## DA3450 Project
+## OS and Conflict Project
 
-This repository contains the code, data, and other materials used for
-the class project in DA3450: Open Source Data Analysis.
+This repository contains the code, data, and other materials used for my analysis of OS data.
 
 ## To Do
 
